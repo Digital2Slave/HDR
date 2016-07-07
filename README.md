@@ -26,7 +26,7 @@ As you see, in the source code. I also code a method which is used to auto adjus
 2. When x in[128,255],then Y in [128,255], Yinv in [127,0], and Y > Yinv;
 3. The formula of Yfinal is as following:
     * Yfinal[i] = (1-afa)*Y[i] + afa*Yinv[i]
-    * afa = max(Y[i],Yinv[i])/min(Y[i],Yinv[i]), i in[0,255]
+    * afa = min(Y[i],Yinv[i])/max(Y[i],Yinv[i]), i in[0,255]
 
 I analysis the formula of Yfinal by Python language with the help of numpy and matplotlib. 
 
