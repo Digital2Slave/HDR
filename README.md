@@ -4,16 +4,16 @@
 ## What i did?
 
 
-I implemented ***2015 High-performance high dynamic range image generation by inverted local patterns *** But, this version do not include **AGC** which is in the following literature **2011_Low-complexity camera digital signal imaging for videodocument projection system**.
+I implemented ***2015 High-performance high dynamic range image generation by inverted local patterns*** But, this version do not include **AGC** which is in the following literature **2011_Low-complexity camera digital signal imaging for videodocument projection system**.
 
 ### Result
 
-1. input image is "src.jpg"
+1. input image **src.jpg**
 
 ![src](./src.jpg)
 
 
-2. output image is "res.jpg"
+2. output image **res.jpg**
 
 ![res](./res.jpg)
 
@@ -46,9 +46,10 @@ I analysis the formula of Yfinal by Python language with the help of numpy and m
 	ax1.plot(x, Y, label="Y")
 	ax1.plot(x, Yinv, label="Yinv")
 	ax1.plot(x, yfinal, label="Yfinal")
-	# 设置中间分隔位置
+	# -----setting middle value-----
 	middle = np.full((256,1),128)
 	ax1.plot(list(middle),x)
+    # ------------------------------
 	ax1.set_ylabel("Y(output)")
 	ax1.set_xlabel("Y(input)")
 	ax1.legend(loc='upper left', prop={'size':10})
