@@ -331,7 +331,7 @@ void imgHelp::hpHdrByInvertedLocalPatterns(Mat& img)
     uchar max_mf = 0, val_mf = 0;
     for (int j = 0; j < rows / w_mf; j++)
     {
-        for (int i = 0; i < rows / w_mf; i++)
+        for (int i = 0; i < cols / w_mf; i++)
         {
             // Find max intensity of w_mf * w_mf window
             max_mf = 0;
